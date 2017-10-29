@@ -9,6 +9,14 @@ import { ItemComponent } from './item/item.component';
 
 @NgModule({
   imports     : [CommonModule],
-  declarations: [TodolistComponent, HeaderComponent, MainComponent, FooterComponent, ListComponent, ItemComponent]
+  declarations: [
+    TodolistComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+    ListComponent,
+    ItemComponent
+  ],
+  exports: [TodolistComponent]
 })
 export class TodolistModule { }
