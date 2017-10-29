@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  public title: string;
+  public appTitle: string;
   public items: Item[];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
-    this.title = 'TOLOZ';
+    this.appTitle = 'TOLOZ';
     this.items = [new Item('js'), new Item('ts')];
   }
 
