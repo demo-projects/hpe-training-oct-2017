@@ -15,7 +15,11 @@ export class TodolistComponent implements OnInit {
 
   ngOnInit() {
     this.appTitle = 'TOLOZ';
-    this.items = [new Item('js'), new Item('ts')];
+    this.items = [];
+  }
+
+  addItem(title: string) {
+    this.items.push(new Item(title));
   }
 
 }

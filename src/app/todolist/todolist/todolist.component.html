@@ -1,6 +1,7 @@
 <section class="todoapp">
 
-  <app-header [title]="appTitle"></app-header>
+  <app-header (onValue)="addItem($event)" 
+              [title]="appTitle"></app-header>
 
   <app-main>
     <app-list [items]=items></app-list>    
