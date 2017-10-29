@@ -11,5 +11,4 @@ export class ItemComponent {
   @Input()
   public currentItem: Item;
 
-
 }

@@ -1,3 +1,4 @@
+import { LowPipe } from './low';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodolistComponent } from './todolist/todolist.component';

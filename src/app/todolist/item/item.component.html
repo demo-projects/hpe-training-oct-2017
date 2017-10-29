@@ -3,7 +3,8 @@
     <input class="toggle"
            [checked]="currentItem.completed"
            type="checkbox">
-    <label>{{ currentItem.title }}</label>
+    <label>{{ currentItem.title | low }} 
+           createdAt: {{  currentItem.created | date  }} </label>
     <button class="destroy"></button>
   </div>
   <input class="edit">
