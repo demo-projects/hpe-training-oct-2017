@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class LowPipe implements PipeTransform {
 
-  public transform(value: string): string {
+  transform(value: string, args?: any): string {
     return value.toLowerCase();
   }
+
 }

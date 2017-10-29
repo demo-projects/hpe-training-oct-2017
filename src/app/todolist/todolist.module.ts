@@ -1,4 +1,4 @@
-import { LowPipe } from './low';
+import { UtilsModule } from '../utils/utils.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodolistComponent } from './todolist/todolist.component';
@@ -9,7 +9,7 @@ import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 
 @NgModule({
-  imports     : [CommonModule],
+  imports     : [CommonModule, UtilsModule],
   declarations: [
     TodolistComponent,
     HeaderComponent,
