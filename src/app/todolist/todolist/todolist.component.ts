@@ -1,3 +1,5 @@
+import { Logger } from '../../utils/logger';
+import { TodolistService } from '../todolist.service';
 import { Item } from '../item';
 import { Component, OnInit } from '@angular/core';
 
@@ -6,20 +8,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './todolist.component.html',
   styleUrls: ['./todolist.component.scss']
 })
-export class TodolistComponent implements OnInit {
+
+export class TodolistComponent  {
 
   public appTitle: string;
-  public items: Item[];
+  public list: TodolistService;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(list: TodolistService) {
+    this.list = list;
     this.appTitle = 'TOLOZ';
-    this.items = [];
   }
-
-  addItem(title: string) {
-    this.items.push(new Item(title));
-  }
-
 }
