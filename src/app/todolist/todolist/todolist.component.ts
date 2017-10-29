@@ -1,10 +1,10 @@
-import { Logger } from '../../utils/logger';
 import { TodolistService } from '../todolist.service';
 import { Item } from '../item';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todolist',
+  providers   : [TodolistService],
   templateUrl: './todolist.component.html',
   styleUrls: ['./todolist.component.scss']
 })

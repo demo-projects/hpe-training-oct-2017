@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
-import { Logger } from '../utils/logger';
+import { LoggerService } from '../utils/logger.service';
+import { Tudubom } from './core';
+import { Component, Injectable } from '@angular/core';
 import { Item } from './item';
 
+
+@Injectable()
 export class TodolistService {
 
   private _items: Item[];
-  private _logger: Logger;
+  private _logger: LoggerService;
 
-  constructor(logger: Logger) {
+  constructor(logger: LoggerService) {
     this._items = [];
     this._logger = logger;
   }

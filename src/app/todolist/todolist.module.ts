@@ -10,8 +10,7 @@ import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 
 @NgModule({
-  imports     : [CommonModule, UtilsModule],
-  providers   : [TodolistService],
+  imports     : [CommonModule, UtilsModule], 
   declarations: [
     TodolistComponent,
     HeaderComponent,
