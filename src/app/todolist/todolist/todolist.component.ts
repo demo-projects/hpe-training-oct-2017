@@ -1,3 +1,4 @@
+import { Item } from '../item';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  constructor() { }
+  public title: string;
+  public items: Item[];
+
+  constructor() {}
 
   ngOnInit() {
+    this.title = 'TOLOZ';
+    this.items = [new Item('js'), new Item('ts')];
   }
 
 }
