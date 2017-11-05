@@ -8,6 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListComponent {
 
-  @Input() items: Item[];
+  @Input() items;
 
 }

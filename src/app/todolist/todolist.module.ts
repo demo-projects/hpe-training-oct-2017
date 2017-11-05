@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { TodolistService } from './todolist.service';
 import { UtilsModule } from '../utils/utils.module';
 import { NgModule } from '@angular/core';
@@ -10,7 +12,12 @@ import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 
 @NgModule({
-  imports     : [CommonModule, UtilsModule], 
+  imports     : [
+    CommonModule,
+    UtilsModule,
+    HttpClientModule,
+    RouterModule
+  ],
   declarations: [
     TodolistComponent,
     HeaderComponent,

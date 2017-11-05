@@ -3,7 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-todolist></app-todolist>
+    <a routerLink="login">login</a>
+     <a routerLink="list">list</a>
+
+    <router-outlet></router-outlet>
   `,
 })
 

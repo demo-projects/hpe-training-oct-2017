@@ -1,5 +1,5 @@
 <ul class="todo-list">
-  <app-item *ngFor="let i of items"
+  <app-item *ngFor="let i of items | async"
             [currentItem]="i">    
   </app-item>
 </ul>
